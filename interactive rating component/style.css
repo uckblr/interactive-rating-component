@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass&display=swap');
+
+body {
+    background-color: #000;
+    font-family: 'Overpass',
+        sans-serif;
+}
+
+.container {
+    background-color: hsl(216, 12%, 8%);
+    width: 384px;
+    /* height: 345px; */
+    margin: 130px auto;
+    box-sizing: border-box;
+    border-radius: 25px;
+    padding: 30px;
+}
+
+.container .star {
+    background-color: hsl(213, 19%, 18%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 3px;
+}
+
+.container .star img {
+    width: 33px;
+    height: 30px;
+    margin: 9px auto;
+    display: block;
+    transition: 0.5s;
+}
+
+.container .star img:hover {
+    transform: rotate(360deg);
+}
+
+.container .text h2 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+}
+
+.container .text p {
+    color: hsl(216, 12%, 54%);
+    font-weight: 400;
+    text-align: left;
+    font-size: 15px;
+}
+
+.container .numbers {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .numbers button[type="button"] {
+    background-color: hsl(213, 19%, 18%);
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    transition: 0.5s;
+    color: hsl(0, 0%, 100%);
+}
+
+.container .numbers button[type="button"]:hover {
+    background-color: hsl(216, 12%, 54%);
+}
+
+.container .numbers button[type="button"]:focus {
+    background-color: hsl(25, 97%, 53%);
+}
+
+.container button[type="submit"] {
+    background-color: hsl(25, 97%, 53%);
+    width: 100%;
+    height: 50px;
+    border-radius: 25px;
+    border: none;
+    cursor: pointer;
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    margin-top: 20px;
+    transition: 0.5s;
+}
+
+.container button[type="submit"]:hover {
+    background-color: hsl(0, 0%, 100%);
+    color: hsl(25, 97%, 53%);
+    transform: scale(0.95);
+}
+
+.container button[type="submit"]:active {
+    transform: scale(1.10);
+    background-color: hsl(25, 97%, 53%);
+    color: hsl(0, 0%, 100%);
+}
+
+.container img {
+    display: block;
+    margin: 20px auto;
+}
+
+.container span {
+    background-color: hsl(213, 19%, 18%);
+    color: hsl(25, 97%, 53%);
+    font-weight: 400;
+    padding: 10px;
+    border-radius: 25px;
+    display: block;
+    margin: 20px auto;
+    text-align: center;
+    width: 60%;
+}
+
+.container h1 {
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.container p {
+    color: hsl(216, 12%, 54%);
+    font-weight: 400;
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 15px;
+}
+
+.container #no {
+    color: hsl(25, 97%, 53%);
+    font-weight: 700;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+@media screen and (max-width: 375px) {
+    .container {
+        width: 90%;
+        margin: 100px auto;
+    }
+
+    .container .numbers button[type="button"] {
+        width: 40px;
+        height: 40px;
+    }
+}
